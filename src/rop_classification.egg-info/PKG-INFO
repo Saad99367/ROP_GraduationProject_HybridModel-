@@ -1,0 +1,55 @@
+Metadata-Version: 2.4
+Name: rop-classification
+Version: 0.1.0
+Summary: Retinopathy of Prematurity (ROP) classification system
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: torch>=2.0.0
+Requires-Dist: torchvision>=0.15.0
+Requires-Dist: timm>=0.9.0
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: Pillow
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: tqdm
+Requires-Dist: pyyaml
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: black; extra == "dev"
+
+# Retinopathy of Prematurity (ROP) Classification
+
+This package implements an engineering-quality system for ROP image classification using a Hybrid architecture (EfficientNet-B3 + Transformer + Fuzzy Logic Layer). 
+
+## Requirements
+- Python 3.9+
+- PyTorch 2.0+
+
+## Setup
+Install the package and dependencies:
+```bash
+pip install -e .[dev]
+```
+
+## Training
+To train the model, ensure your dataset is placed in the `Dataset` directory, organized in subfolders by class (`Normal`, `Stage_1`, etc.).
+Modify `configs/default.yaml` as necessary, then run:
+```bash
+python scripts/train.py --config configs/default.yaml
+```
+
+## Inference
+To run a prediction on a single image:
+```bash
+python scripts/predict.py --image path/to/image.jpg --checkpoint artifacts/checkpoints/best_model.pth
+```
+
+## Tests
+Run the test suite using pytest:
+```bash
+pytest tests/
+```

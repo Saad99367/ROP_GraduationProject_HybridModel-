@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Datasets
+Dataset/
+datasets/
+data/
+
+# Model weights
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# Jupyter
+.ipynb_checkpoints/

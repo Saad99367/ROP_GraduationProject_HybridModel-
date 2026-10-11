@@ -1,0 +1,28 @@
+dataset:
+  data_dir: "Dataset"
+  img_size: 224
+  batch_size: 4
+  num_workers: 0
+  seed: 42
+
+model:
+  n_classes: 5
+  pretrained_backbone: true
+  d_model: 512
+  n_heads: 8
+  n_layers: 2
+  ff_dim: 2048
+  dropout: 0.1
+  classifier_hidden: 256
+  fuzzy_features: 64
+  n_fuzzy_terms: 3
+
+training:
+  epochs: 50
+  freeze_backbone_epochs: 5
+  lr: 0.0001
+  weight_decay: 0.0001
+  label_smoothing: 0.1
+  patience: 10
+  accum_steps: 2
+  save_dir: "artifacts/checkpoints"
