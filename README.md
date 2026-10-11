@@ -5,12 +5,6 @@
 ![Grade](https://img.shields.io/badge/Grade-A%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
 
-## 🎓 Graduation Project Context
-This repository contains the source code for my Computer Science graduation project, which received an **A+ grade**. The project explores an advanced hybrid deep learning architecture for classifying Retinopathy of Prematurity (ROP) from retinal images. 
-
-**Note:** This project is intended for research and educational purposes. It is not approved for clinical diagnosis.
-
----
 
 ## 📖 Project Overview and Objectives
 Retinopathy of Prematurity (ROP) is an eye disease that can happen in premature babies. Early and accurate staging is critical to prevent blindness. The objective of this project is to build an automated, deep-learning-based classification pipeline capable of staging ROP into five categories (Normal, Stage 1, Stage 2, Stage 3, and Stage 4).
@@ -195,8 +189,3 @@ This will start a local web server (usually at `http://127.0.0.1:7860`). Open th
 - **Cross-Validation:** Implement k-fold cross-validation to rigorously assess stability.
 - **Explainability:** Integrate Grad-CAM or Attention Rollout to visualize what regions the Transformer is focusing on.
 - **Hyperparameter Tuning:** Systematically optimize the number of fuzzy terms and transformer heads.
-
-=======
-# ROP_GraduationProject_HybridyModel-
-A deep learning research project for Retinopathy of Prematurity (ROP) classification using EfficientNet-B3, Transformer Encoder, and Fuzzy Logic in PyTorch.
->>>>>>> 0807e201c53af8a146fb7b38eca0bcb32c34d248
