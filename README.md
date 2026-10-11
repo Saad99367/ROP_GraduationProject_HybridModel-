@@ -1,7 +1,6 @@
 # ROP-HybridVision 👁️🏥
 
 ![Project Status](https://img.shields.io/badge/Status-Completed-success) 
-![Grade](https://img.shields.io/badge/Grade-A%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
 
 
