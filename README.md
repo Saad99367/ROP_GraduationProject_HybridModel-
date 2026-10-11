@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ROP-HybridVision 👁️🏥
 
 ![Project Status](https://img.shields.io/badge/Status-Completed-success) 
