@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ROP-HybridVision 👁️🏥
 
 ![Project Status](https://img.shields.io/badge/Status-Completed-success) 
@@ -195,3 +196,7 @@ This will start a local web server (usually at `http://127.0.0.1:7860`). Open th
 - **Explainability:** Integrate Grad-CAM or Attention Rollout to visualize what regions the Transformer is focusing on.
 - **Hyperparameter Tuning:** Systematically optimize the number of fuzzy terms and transformer heads.
 
+=======
+# ROP_GraduationProject_HybridyModel-
+A deep learning research project for Retinopathy of Prematurity (ROP) classification using EfficientNet-B3, Transformer Encoder, and Fuzzy Logic in PyTorch.
+>>>>>>> 0807e201c53af8a146fb7b38eca0bcb32c34d248
