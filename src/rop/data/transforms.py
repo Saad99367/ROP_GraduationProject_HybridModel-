@@ -1,0 +1,30 @@
+from torchvision import transforms
+
+# ImageNet statistics compatible with EfficientNet
+IMAGENET_MEAN = [0.485, 0.456, 0.406]
+IMAGENET_STD = [0.229, 0.224, 0.225]
+
+def get_train_transforms(img_size: int = 224) -> transforms.Compose:
+    """
+    Transforms for training, including augmentations.
+    We avoid aggressive augmentations that might obscure disease characteristics.
+    """
+    return transforms.Compose([
+        transforms.Resize((img_size, img_size)),
+        transforms.RandomHorizontalFlip(),
+        transforms.RandomRotation(15),
+        transforms.ColorJitter(brightness=0.1, contrast=0.1),
+        transforms.ToTensor(),
+        transforms.Normalize(mean=IMAGENET_MEAN, std=IMAGENET_STD)
+    ])
+
+def get_eval_transforms(img_size: int = 224) -> transforms.Compose:
+    """
+    Transforms for validation, testing, and inference.
+    No data augmentation.
+    """
+    return transforms.Compose([
+        transforms.Resize((img_size, img_size)),
+        transforms.ToTensor(),
+        transforms.Normalize(mean=IMAGENET_MEAN, std=IMAGENET_STD)
+    ])

@@ -6,12 +6,9 @@ venv/
 .env
 
 # Datasets
-Dataset/
-datasets/
-data/
+
 
 # Model weights
-*.pth
 *.pt
 *.ckpt
 *.onnx
